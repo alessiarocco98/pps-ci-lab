@@ -3,8 +3,11 @@ on:
     push: # On every push on any branc
 jobs:
     Build: # Job name
-    runs-on: ubuntu-20.04 # Operating system selection
+    runs-on: ubuntu-latest # Operating system selection
     steps:
+        -name: Checkout
+        uses: actions/checkout@v2  #Action implemented in this repository, tag "2"
+        - uses: joschi/setup-jdk@v2.3.0  #Action implemented in repository "joschi/setup-jdk"tag "2.3.0"
         with: # Actions parameters (action name omitted)
             java-version: 15
         -name: Build
