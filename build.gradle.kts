@@ -10,3 +10,8 @@ repositories {
 application {
     mainClass.set("CakeLier")
 }
+
+}
+dependencies{
+
+}

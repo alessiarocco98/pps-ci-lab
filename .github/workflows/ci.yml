@@ -1,9 +1,9 @@
 name: Test on Linux
 on:
-  push: 
+  push:
 jobs:
   Build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     env:
       TERM: dumb
     steps:
