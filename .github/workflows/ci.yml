@@ -1,4 +1,4 @@
-name: workflow
+name: Test on Linux
 on:
   push:
 jobs:
@@ -14,3 +14,5 @@ jobs:
           java-version: 15
       - name: Build
         run: ./gradlew clean build
+      - name: Run
+        run: ./gradlew run  

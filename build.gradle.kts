@@ -1,8 +1,16 @@
 plugins {
     java
+    application
 }
-repositories{
+
+repositories {
     mavenCentral()
+}
+
+application {
+    mainClass.set("CakeLier")
+}
+
 }
 dependencies{
 
