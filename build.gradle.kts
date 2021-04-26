@@ -11,7 +11,7 @@ application {
     mainClass.set("CakeLier")
 }
 
-}
+
 dependencies{
   
 }
