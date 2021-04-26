@@ -3,7 +3,7 @@ plugins {
     application
 }
 
-repositories {
+repositories{
     mavenCentral()
 }
 
@@ -13,5 +13,5 @@ application {
 
 }
 dependencies{
-
+  
 }
