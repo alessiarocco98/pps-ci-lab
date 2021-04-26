@@ -4,7 +4,7 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: My_Checkout
         uses: actions/checkout@v2
       - uses: joschi/setup-jdk@v2.3.0
         with:
