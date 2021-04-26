@@ -1,4 +1,4 @@
-name: MyFirstWorkflow 
+name: MyIncredibleFirstWorkflow 
 on:
     push: # On every push on any branc
 jobs:
