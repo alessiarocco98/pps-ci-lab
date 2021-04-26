@@ -1,8 +1,11 @@
+name: Test on Linux
 on:
   push:
 jobs:
   Build:
     runs-on: ubuntu-latest
+    env:
+      TERM: dumb
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -10,4 +13,6 @@ jobs:
         with:
           java-version: 15
       - name: Build
-        run: ./gradlew build
+        run: ./gradlew clean build
+      - name: Run
+        run: ./gradlew run  
