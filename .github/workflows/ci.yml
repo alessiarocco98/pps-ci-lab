@@ -1,0 +1,11 @@
+name: MyFirstWorkflow 
+on:
+    push: # On every push on any branc
+jobs:
+    Build: # Job name
+    runs-on: ubuntu-20.04 # Operating system selection
+    steps:
+        with: # Actions parameters (action name omitted)
+            java-version: 15
+        -name: Build
+        run: ./gradlew clean build
