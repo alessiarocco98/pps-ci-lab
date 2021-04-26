@@ -1,1 +1,9 @@
-plugins { java }
+plugins {
+    java
+}
+repositories{
+    mavenCentral()
+}
+dependencies{
+
+}
